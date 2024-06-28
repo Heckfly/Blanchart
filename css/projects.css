@@ -1,0 +1,32 @@
+.projects {
+  padding-top: 88px;
+  padding-bottom: 79px;
+  background-color: var(--white-color);
+}
+
+.projects__title {
+  margin-bottom: 21px;
+}
+
+.projects__descr {
+  margin-bottom: 33px;
+  width: 67%;
+}
+
+.projects__partners {
+  margin-bottom: 15px;
+}
+
+.projects__img-wrap {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 33px;
+}
+
+.projects__img {
+  width: 329px;
+  height: 124px;
+  padding: 28px 27px;
+  border: 1px solid var(--neon-silver-color);
+}

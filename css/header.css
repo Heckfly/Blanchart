@@ -1,0 +1,123 @@
+.header {
+  background-color: var(--black-color);
+}
+
+.header-content {
+  position: relative;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+  font-size: 0;
+}
+
+.header__logo {
+  grid-column: span 2;
+}
+
+.header__nav {
+  grid-column: span 7;
+  display: flex;
+  padding-top: 9px;
+  padding-left: 27px;
+}
+
+.header__list {
+  display: flex;
+  -ms-flex-wrap: wrap;
+  flex-wrap: wrap;
+  gap: 15px 84px;
+}
+
+/* .header__item {
+  transform: translateX(-6px);
+} */
+
+.header__link {
+  position: relative;
+  padding: 2px 6px 2px 6px;
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--white-color);
+  background-color: transparent;
+  -webkit-transition-property: color, background-color;
+  -o-transition-property: color, background-color;
+  transition-property: color, background-color;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+.header__link:focus {
+  background-color: var(--royal-purple-color);
+}
+
+.header__link:hover {
+  background-color: transparent;
+  color: var(--lavender-color);
+}
+
+.header__link:active {
+  background-color: transparent;
+  color: var(--royal-purple-color);
+}
+
+.header__btn {
+  grid-column: span 1;
+  -ms-flex-item-align: center;
+  -ms-grid-row-align: center;
+  align-self: center;
+  margin-left: auto;
+  padding: 6px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  -webkit-transform: translateX(6px);
+  -ms-transform: translateX(6px);
+  transform: translateX(6px);
+  -webkit-transition-property: background-color;
+  -o-transition-property: background-color;
+  transition-property: background-color;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+.header__btn svg {
+  fill: var(--white-color);
+  -webkit-transition-property: fill;
+  -o-transition-property: fill;
+  transition-property: fill;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+.header__btn:focus {
+  background-color: var(--royal-purple-color);
+}
+
+.header__btn:hover {
+  background-color: transparent;
+}
+
+.header__btn:hover svg {
+  fill: var(--lavender-color);
+}
+
+.header__btn:active {
+  background-color: transparent;
+}
+
+.header__btn:active svg {
+  fill: var(--royal-purple-color);
+}

@@ -1,0 +1,198 @@
+.contacts {
+  padding-top: 40px;
+  padding-bottom: 34px;
+  background-color: var(--white-color);
+  border-top: 1px solid var(--neon-silver-color);
+}
+
+.contacts__title {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+}
+
+.contacts__blocks {
+  display: grid;
+  grid-template-columns: repeat(10, 1fr);
+}
+
+.contacts__addr {
+  grid-column: span 2;
+  padding-top: 8px;
+}
+
+.contacts__name {
+  margin-bottom: 3px;
+}
+
+.contacts__call {
+  grid-column: span 6;
+  padding-top: 13px;
+  padding-left: 16px;
+}
+
+.form__request {
+  display: flex;
+  align-items: center;
+  justify-content: start;
+  flex-wrap: wrap;
+  gap: 10px 20px;
+}
+
+.contacts__socl {
+  grid-column: span 2;
+  margin-left: auto;
+}
+
+.form__name,
+.form__tel {
+  position: relative;
+  padding: 7px 55px 9px 24px;
+  border: 1px solid var(--dark-charcoal-color);
+  border-radius: 100px;
+  font-size: 16px;
+  color: var(--spanish-grey-color);
+  -webkit-transition-property: color, background-color, border-color;
+  -o-transition-property: color, background-color, border-color;
+  transition-property: color, background-color, border-color;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+@-moz-document url-prefix() {
+  .contacts__blocks {
+    gap: 40px;
+  }
+}
+
+.form__name:hover,
+.form__tel:hover {
+  background-color: var(--anti-flash-white-color);
+}
+
+.form__name:focus,
+.form__tel:focus {
+  background-color: var(--white-color);
+  border: 1px solid var(--dark-charcoal-color);
+  color: var(--dark-charcoal-color);
+}
+
+.form__name:active,
+.form__tel:active {
+  background-color: var(--white-color);
+  border: 1px solid var(--dark-charcoal-color);
+  color: var(--dark-charcoal-color);
+}
+
+.form__tel:not(:focus):not(:-moz-placeholder-shown):invalid,
+.form__name:not(:focus):not(:-moz-placeholder-shown):invalid {
+  padding: 6px 54px 8px 23px;
+  border: 2px solid var(--venetian-red-color);
+}
+
+.form__tel:not(:focus):not(:-ms-input-placeholder):invalid,
+.form__name:not(:focus):not(:-ms-input-placeholder):invalid {
+  padding: 6px 54px 8px 23px;
+  border: 2px solid var(--venetian-red-color);
+}
+
+.form__tel:not(:focus):not(:placeholder-shown):invalid,
+.form__name:not(:focus):not(:placeholder-shown):invalid {
+  padding: 6px 54px 8px 23px;
+  border: 2px solid var(--venetian-red-color);
+}
+
+.form__btn {
+  padding: 13px 35px;
+  background-color: transparent;
+  border: 2px solid var(--amethist-color);
+  border-radius: 100px;
+  font-size: 18px;
+  font-weight: 700;
+  color: var(--amethist-color);
+  -webkit-transition-property: color, background-color, border-color, outline-color;
+  -o-transition-property: color, background-color, border-color, outline-color;
+  transition-property: color, background-color, border-color, outline-color;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+.text-small {
+  display: none;
+}
+
+.form__btn:hover {
+  background-color: var(--amethist-color);
+  color: var(--white-color);
+}
+
+.form__btn:focus {
+  outline: 2px solid var(--lavender-color);
+  outline-offset: 3px;
+}
+
+.form__btn:active {
+  background-color: var(--royal-purple-color);
+  border-color: var(--pastel-indigo-color);
+  color: var(--white-color);
+}
+
+.contacts__link {
+  display: flex;
+  gap: 10px 21px;
+  flex-wrap: wrap;
+}
+
+.contacts__social {
+  margin-bottom: 10px;
+  font-size: 24px;
+}
+
+.contacts__watts {
+  fill: var(--bice-green-color);
+}
+
+.contacts__teleg {
+  fill: var(--spanish-sky-blue-color);
+}
+
+.contacts__watts,
+.contacts__teleg {
+  -webkit-transition-property: fill-opacity, outline-color;
+  -o-transition-property: fill-opacity, outline-color;
+  transition-property: fill-opacity, outline-color;
+  -webkit-transition-duration: 0.3s;
+  -o-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-in-out;
+  -o-transition-timing-function: ease-in-out;
+  transition-timing-function: ease-in-out;
+}
+
+.contacts__watts:hover,
+.contacts__teleg:hover {
+  fill-opacity: 0.5;
+}
+
+.contacts__watts:focus,
+.contacts__teleg:focus {
+  fill-opacity: 0.5;
+}
+
+.contacts__watts:active,
+.contacts__teleg:active {
+  fill-opacity: 1;
+  outline: 1px solid var(--amethist-color);
+  outline-offset: -1px;
+  border-radius: 100%;
+}

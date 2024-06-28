@@ -1,0 +1,13 @@
+.about {
+  padding-top: 85px;
+  padding-bottom: 71px;
+  background-color: var(--white-color);
+}
+
+.about__title {
+  margin-bottom: 20px;
+}
+
+.about__descr {
+  width: 65%;
+}

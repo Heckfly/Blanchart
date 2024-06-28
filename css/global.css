@@ -1,0 +1,134 @@
+html {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+}
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+
+a {
+  border: 0;
+  outline: none;
+  color: inherit;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+svg,
+label {
+  outline: none;
+}
+
+img {
+  max-width: 100%;
+  object-fit: cover;
+}
+
+h1,
+h2,
+h3,
+p,
+figure {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans-Regular"),
+    url('../fonts/OpenSans-400-Regular.woff2') format('woff2'),
+    url('../fonts/OpenSans-400-Regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans-SemiBold"),
+    url('../fonts/OpenSans-600-SemiBold.woff2') format('woff2'),
+    url('../fonts/OpenSans-600-SemiBold.woff') format('woff');
+  font-weight: 600;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "OpenSans";
+  src: local("OpenSans-Bold"),
+    url('../fonts/OpenSans-700-Bold.woff2') format('woff2'),
+    url('../fonts/OpenSans-700-Bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+:root {
+  --black-color: #000000;
+  --dark-charcoal-color: #333333;
+  --granite-gray-color: #666666;
+  --spanish-grey-color: #999999;
+  --pastel-indigo-color: #D1A9F0;
+  --lavender-color: #C283F3;
+  --amethist-color: #9D5CD0;
+  --royal-purple-color: #7943A4;
+  --bice-green-color: #30BF39;
+  --spanish-sky-blue-color: #26A5E4;
+  --venetian-red-color: #D11616;
+  --neon-silver-color: #CACACA;
+  --anti-flash-white-color: #ECECEC;
+  --white-color: #FFFFFF;
+  --gap: 50px;
+}
+
+body {
+  min-width: 320px;
+  font-family: "OpenSans", sans-serif, serif;
+  font-weight: 400;
+  background-color: var(--white-color);
+}
+
+/* global */
+.container {
+  margin: 0 auto;
+  padding: 0 50px;
+  max-width: 1700px;
+  width: 100%;
+}
+
+.list-reset {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.btn-reset {
+  padding: 0;
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+  outline: none;
+}
+
+.title {
+  font-size: 48px;
+  font-weight: 400;
+  word-wrap: break-word;
+}
+
+.sub-title {
+  font-size: 24px;
+  font-weight: 600;
+}
+
+.descr {
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 32px;
+}
